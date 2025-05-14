@@ -1,0 +1,17 @@
+{"time":"2025-05-13T21:29:18.8881864+03:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"D:\\projects\\a\\doctr\\wandb\\run-20250513_212918-vewo1eg6\\logs\\debug-core.log"}
+{"time":"2025-05-13T21:29:19.4717061+03:00","level":"INFO","msg":"created new stream","id":"vewo1eg6"}
+{"time":"2025-05-13T21:29:19.4717061+03:00","level":"INFO","msg":"stream: started","id":"vewo1eg6"}
+{"time":"2025-05-13T21:29:19.4717061+03:00","level":"INFO","msg":"handler: started","stream_id":"vewo1eg6"}
+{"time":"2025-05-13T21:29:19.4717061+03:00","level":"INFO","msg":"sender: started","stream_id":"vewo1eg6"}
+{"time":"2025-05-13T21:29:19.4717061+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"vewo1eg6"}
+{"time":"2025-05-13T21:29:19.7523342+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-13T21:38:35.5856379+03:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/valerylarionov06-/text-recognition/vewo1eg6/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-05-13T22:05:36.4633504+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-13T22:05:36.4633504+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-13T22:05:37.4965491+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.5152152,"progress":"7.8KB/7.8KB"},{"desc":"uploading config.yaml","runtime_seconds":0.2489965,"progress":"1.0KB/1.0KB"}],"total_operations":2}}
+{"time":"2025-05-13T22:05:37.8452723+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-13T22:05:38.1890719+03:00","level":"INFO","msg":"stream: closing","id":"vewo1eg6"}
+{"time":"2025-05-13T22:05:38.1890719+03:00","level":"INFO","msg":"sender: closed","stream_id":"vewo1eg6"}
+{"time":"2025-05-13T22:05:38.1890719+03:00","level":"INFO","msg":"handler: closed","stream_id":"vewo1eg6"}
+{"time":"2025-05-13T22:05:38.1890719+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"vewo1eg6"}
+{"time":"2025-05-13T22:05:38.1890719+03:00","level":"INFO","msg":"stream: closed","id":"vewo1eg6"}

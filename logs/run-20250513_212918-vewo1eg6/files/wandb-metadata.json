@@ -1,0 +1,66 @@
+{
+  "os": "Windows-10-10.0.19045-SP0",
+  "python": "CPython 3.10.7",
+  "startedAt": "2025-05-13T18:29:18.886146Z",
+  "args": [
+    "crnn_vgg16_bn",
+    "--batch_size",
+    "16",
+    "--train_path",
+    "train_one_word",
+    "--val_path",
+    "val_one_word",
+    "--epochs",
+    "5",
+    "--early-stop",
+    "--early-stop-epochs",
+    "5",
+    "--vocab",
+    "russian",
+    "--device",
+    "0",
+    "--amp",
+    "--max-chars",
+    "31",
+    "--wb",
+    "--output_dir",
+    "./models"
+  ],
+  "program": "D:\\projects\\a\\doctr\\references\\recognition\\train_pytorch.py",
+  "codePath": "references\\recognition\\train_pytorch.py",
+  "git": {
+    "remote": "https://github.com/mindee/doctr.git",
+    "commit": "db6d0dbe9aef671695b0f6d725196bec3c7d9a7d"
+  },
+  "email": "valerylarionov06@gmail.com",
+  "root": "D:\\projects\\a\\doctr",
+  "host": "DESKTOP-IAHPLBV",
+  "executable": "D:\\projects\\a\\.venv\\Scripts\\python.exe",
+  "codePathLocal": "references\\recognition\\train_pytorch.py",
+  "cpu_count": 6,
+  "cpu_count_logical": 12,
+  "gpu": "NVIDIA GeForce RTX 3050",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "841424113664",
+      "used": "719724879872"
+    }
+  },
+  "memory": {
+    "total": "17099812864"
+  },
+  "cpu": {
+    "count": 6,
+    "countLogical": 12
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 3050",
+      "memoryTotal": "8589934592",
+      "cudaCores": 2560,
+      "architecture": "Ampere"
+    }
+  ],
+  "cudaVersion": "12.6"
+}

@@ -1,0 +1,33 @@
+D:\projects\a\doctr\references\recognition\train_pytorch.py:115: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler()
+  0%|                                                                                                                                                                                                         | 0/4060 [00:00<?, ?it/s]D:\projects\a\doctr\references\recognition\train_pytorch.py:128: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+D:\projects\a\.venv\lib\site-packages\torch\optim\lr_scheduler.py:182: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn(
+Training loss: 1.80744 | LR: 0.000904509: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4060/4060 [10:34<00:00,  6.40it/s]
+Epoch 1/5 - Training loss: 2.5578 | LR: 0.000904509
+  0%|                                                                                                                                                                                                           | 0/68 [00:00<?, ?it/s]D:\projects\a\doctr\references\recognition\train_pytorch.py:170: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+Validation loss: 2.25207: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 68/68 [01:30<00:00,  1.33s/it]
+Validation loss decreased inf --> 1.81762: saving state...
+Epoch 1/5 - Validation loss: 1.81762 (Exact: 3.89% | Partial: 3.89%)
+Training loss: 0.825276 | LR: 0.00065451: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4060/4060 [06:31<00:00, 10.38it/s]
+Epoch 2/5 - Training loss: 1.27 | LR: 0.00065451
+Validation loss: 1.81996: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 68/68 [01:27<00:00,  1.29s/it]
+Validation loss decreased 1.81762 --> 1.2073: saving state...
+Epoch 2/5 - Validation loss: 1.2073 (Exact: 12.05% | Partial: 12.97%)
+Training loss: 0.712965 | LR: 0.000345494: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4060/4060 [03:50<00:00, 17.65it/s]
+Epoch 3/5 - Training loss: 0.887611 | LR: 0.000345494
+Validation loss: 1.84672: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 68/68 [01:29<00:00,  1.32s/it]
+Validation loss decreased 1.2073 --> 1.00192: saving state...
+Epoch 3/5 - Validation loss: 1.00192 (Exact: 18.16% | Partial: 19.28%)
+Training loss: 0.698234 | LR: 9.54951e-05: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4060/4060 [03:47<00:00, 17.82it/s]
+Epoch 4/5 - Training loss: 0.697717 | LR: 9.54951e-05
+Validation loss: 1.64603: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 68/68 [01:27<00:00,  1.29s/it]
+Validation loss decreased 1.00192 --> 0.922626: saving state...
+Epoch 4/5 - Validation loss: 0.922626 (Exact: 22.06% | Partial: 23.08%)
+Training loss: 0.703679 | LR: 4e-09: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4060/4060 [03:47<00:00, 17.85it/s]
+Epoch 5/5 - Training loss: 0.617559 | LR: 4e-09
+Validation loss: 1.68244: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 68/68 [01:27<00:00,  1.29s/it]
+Validation loss decreased 0.922626 --> 0.908843: saving state...
+Epoch 5/5 - Validation loss: 0.908843 (Exact: 21.78% | Partial: 22.80%)
