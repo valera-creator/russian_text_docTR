@@ -1,0 +1,48 @@
+запуск в гугл коллабе:
+
+сначала это прописать (гугл колаб):
+%cd /content/drive/MyDrive/ColabNotebooks/doctr
+!pip install -e .
+
+а это уже в терминал потом сам запуск (я так запускал):
+(тут нужно будет прописать свои пути к --train_path и --val_path)
+!python3 references/recognition/train_pytorch.py crnn_vgg16_bn --batch_size 128 --train_path train_path --val_path val_path --epochs 5 --early-stop --early-stop-epochs 5 --vocab russian --device 0 --amp --max-chars 31 --wb
+ну, в питоне в целом просто обычный запуск через терминал
+
+рекомендации и инструкции:
+если ошибка, что какого-то символа нет, то в doctr/datasets/vocabs.py в VOCABS["russian"] добавить символы, которых нет в датасете или удалить картинку из папки и удалить из json`а ключ с названием изображения и значением, если слово на картинке условно английское, а датасет русский
+
+лучше сразу добавить в словарь эти символы, они точно есть в датасете (ну, кроме пробела, но лучше его тоже оставить на всякий): + "₽" + " " + "«" + "»" + "№"
+
+запускать программу нужно находясь в папке doctr (не во вложенной doctr, а просто в doctr, внутри нее есть еще папка doctr, в нее не надо заходить)
+
+
+команды для скачивания и запуска:
+git clone https://github.com/mindee/doctr.git
+cd doctr
+pip install -e . --upgrade
+pip install -r references/requirements.txt
+
+далее у меня возникла ошибка, что нет torch, устанавливал torch:
+pip install torch
+pip install torchvision
+
+далее у меня не видело torch (проблемы с gpu или cuda), применил это:
+pip uninstall torch
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118  
+
+после этого этой командой запустилось и дошло до выбора отслеживания работы (параметр --wb, это для отслеживания на сайте как идет обучение, потери и тд, ключ нужен будет https://wandb.ai/authorize), далее я выключил, уже был печальный опыт нехватки ресурсов
+python references/recognition/train_pytorch.py crnn_vgg16_bn --batch_size 128 --train_path train_path --val_path val_path --epochs 5 --early-stop --early-stop-epochs 5 --vocab russian --device 0 --amp --max-chars 31 --wb
+
+в целом у меня из ошибок были пока что эти 2:
+1) символ на картинке какой-то, которого нет в датасете (выше описал как решать)
+2) длина слова превышала max-chars, но сейчас с 31 не должно по идее превышать, я делал, что длина слова < 30 в датасете, отставлял только такие
+
+
+cd doctr
+python references/recognition/train_pytorch.py crnn_vgg16_bn --batch_size 32 --train_path train_one_word --val_path val_one_word --epochs 5 --early-stop --early-stop-epochs 5 --vocab russian --device 0 --amp --max-chars 31 --wb
+
+
+
+
+
