@@ -46,6 +46,9 @@ cd doctr
 
 2) python references/recognition/train_pytorch.py crnn_vgg16_bn --batch_size 16 --train_path train_path --val_path val_path --epochs 5 --early-stop --early-stop-epochs 4 --vocab russian --device 0 --amp --max-chars 31 --wb --output_dir ./models
 
+3) python references/recognition/train_pytorch.py crnn_vgg16_bn --batch_size 16 --train_path train_one_word --val_path val_one_word --epochs 15 --early-stop --early-stop-epochs 10 --vocab russian --device 0 --amp --max-chars 31 --wb --output_dir ./models
 
 1) 5 эпох и везде 1 слово на картинке
 2) 5 эпох и слов несколько или одно на картинке
+3) 15 эпох и везде 1 слово на картинке
+

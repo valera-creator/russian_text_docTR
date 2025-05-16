@@ -48,11 +48,13 @@ def main():
     # Путь к модели
     model_path = r"my_models/crnn_vgg16_bn_20250514-201731.pt"
     model_path2 = r"my_models/crnn_vgg16_bn_20250513-212912.pt"
+    model_path3 = r"my_models/crnn_vgg16_bn_20250516-182019.pt"
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
     # Загрузка моделей
     model = load_model(device, text, model_path)
     model2 = load_model(device, text, model_path2)
+    model3 = load_model(device, text, model_path3)
 
     # путь к картинке
     p = r"images/aa.jpg"
@@ -60,6 +62,7 @@ def main():
     # распознавание
     recognize_text(p, device, model, 1)
     recognize_text(p, device, model2, 2)
+    recognize_text(p, device, model3, 3)
 
 
 if __name__ == "__main__":
