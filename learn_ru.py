@@ -20,10 +20,11 @@ def load_image(img_path, device):
 
 
 def get_correct_num_text(text):
-    if "№" in text:
-        if text.index("№") + 1 < len(text) and text[text.index('№') + 2] not in "01234567890":
-            text = list(text)
-            text[text.index("№")] = ' '
+    """убирает № в словах, если после них нет цифр, оставляет №, если оно самым последним символом"""
+    text = list(text)
+    for i in range(len(text)):
+        if text[i] == '№' and i + 1 != len(text) and text[i + 1] not in "01234567890":
+            text[i] = ' '
     return ''.join(text)
 
 
@@ -70,7 +71,7 @@ def main():
     model4 = load_model(device, text, model_path4)
 
     # путь к картинке
-    p = r"images/aa2.png"
+    p = r"images/aa3.png"
 
     # распознавание
     recognize_text(p, device, model, 1)
