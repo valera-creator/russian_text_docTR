@@ -19,6 +19,14 @@ def load_image(img_path, device):
     return img_tensor
 
 
+def get_correct_num_text(text):
+    if "№" in text:
+        if text.index("№") + 1 < len(text) and text[text.index('№') + 2] not in "01234567890":
+            text = list(text)
+            text[text.index("№")] = ' '
+    return ''.join(text)
+
+
 def recognize_text(img_path, device, model, num):
     # получение изображения
     img_tensor = load_image(img_path, device)
@@ -29,7 +37,9 @@ def recognize_text(img_path, device, model, num):
 
     # Вывод результатов
     words, _ = zip(*out["preds"])
-    print(f"Распознанный текст({num}): {words[0]}")
+    text = get_correct_num_text(words[0])
+
+    print(f"Распознанный текст({num}): {text}")
     return words[0]
 
 
@@ -60,7 +70,7 @@ def main():
     model4 = load_model(device, text, model_path4)
 
     # путь к картинке
-    p = r"images/aa3.png"
+    p = r"images/aa2.png"
 
     # распознавание
     recognize_text(p, device, model, 1)
