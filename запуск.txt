@@ -50,9 +50,16 @@ cd doctr
 
 4) python references/recognition/train_pytorch.py crnn_vgg16_bn --batch_size 16 --train_path train_path --val_path val_path --epochs 17 --early-stop --early-stop-epochs 15 --vocab russian --device 0 --amp --max-chars 31 --wb --output_dir ./models
 
+5) python references/recognition/train_pytorch.py crnn_vgg16_bn --batch_size 16 --train_path new_train_one_word --val_path new_val_one_word --epochs 20 --early-stop --early-stop-epochs 17 --vocab russian --device 0 --amp --max-chars 31 --wb --output_dir ./models
+
 
 1) 5 эпох и везде 1 слово на картинке
 2) 5 эпох и слов несколько или одно на картинке
 3) 15 эпох и везде 1 слово на картинке
-4) 20 эпох и слов несколько или одно на картинке
+4) 17 эпох и слов несколько или одно на картинке
+5) 20 эпох и везде 1 слово на картинке + в валидационную часть больше картинок добавил
 
+датасет:
+https://drive.google.com/drive/folders/14NM2Pf023JlJrkAOSi2laDj1C3QXmPJL?usp=sharing
+
+чем позднее дата в названии модели, тем ниже это пункт запуска из тех 5, которые выше

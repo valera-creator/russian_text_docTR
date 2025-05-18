@@ -1,0 +1,55 @@
+_wandb:
+    value:
+        cli_version: 0.19.11
+        m: []
+        python_version: 3.10.7
+        t:
+            "1":
+                - 1
+                - 41
+                - 49
+                - 55
+            "2":
+                - 1
+                - 41
+                - 49
+                - 55
+            "3":
+                - 2
+                - 13
+                - 16
+                - 23
+                - 55
+            "4": 3.10.7
+            "5": 0.19.11
+            "8":
+                - 3
+                - 5
+            "12": 0.19.11
+            "13": windows-amd64
+architecture:
+    value: crnn_vgg16_bn
+batch_size:
+    value: 16
+epochs:
+    value: 20
+framework:
+    value: pytorch
+input_size:
+    value: 32
+learning_rate:
+    value: 0.001
+optimizer:
+    value: adam
+pretrained:
+    value: false
+scheduler:
+    value: cosine
+train_hash:
+    value: 2d9e76a1422bcf20b71f1ea20a0b7fdab222e1f95132b1e68f8ee1c5f7a494e8
+val_hash:
+    value: 2fec8631dd8cc272eafb92996cd394f7e6d1268fec9204e6858a011cd64c5683
+vocab:
+    value: russian
+weight_decay:
+    value: 0

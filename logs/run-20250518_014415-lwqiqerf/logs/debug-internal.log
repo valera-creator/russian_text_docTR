@@ -1,0 +1,16 @@
+{"time":"2025-05-18T01:44:15.4145644+03:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"D:\\projects\\a\\doctr\\wandb\\run-20250518_014415-lwqiqerf\\logs\\debug-core.log"}
+{"time":"2025-05-18T01:44:16.1090741+03:00","level":"INFO","msg":"created new stream","id":"lwqiqerf"}
+{"time":"2025-05-18T01:44:16.1090741+03:00","level":"INFO","msg":"stream: started","id":"lwqiqerf"}
+{"time":"2025-05-18T01:44:16.1090741+03:00","level":"INFO","msg":"handler: started","stream_id":"lwqiqerf"}
+{"time":"2025-05-18T01:44:16.1090741+03:00","level":"INFO","msg":"sender: started","stream_id":"lwqiqerf"}
+{"time":"2025-05-18T01:44:16.1090741+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"lwqiqerf"}
+{"time":"2025-05-18T01:44:16.3738676+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-18T05:35:56.0713556+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-18T05:35:56.0713556+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-18T05:35:57.0624448+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.5051674,"progress":"26.5KB/26.5KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.479116,"progress":"345B/345B"},{"desc":"uploading config.yaml","runtime_seconds":0.2585239,"progress":"1.1KB/1.1KB"}],"total_operations":3}}
+{"time":"2025-05-18T05:35:57.5134803+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-18T05:35:57.8180894+03:00","level":"INFO","msg":"stream: closing","id":"lwqiqerf"}
+{"time":"2025-05-18T05:35:57.8180894+03:00","level":"INFO","msg":"sender: closed","stream_id":"lwqiqerf"}
+{"time":"2025-05-18T05:35:57.8180894+03:00","level":"INFO","msg":"handler: closed","stream_id":"lwqiqerf"}
+{"time":"2025-05-18T05:35:57.8180894+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"lwqiqerf"}
+{"time":"2025-05-18T05:35:57.8180894+03:00","level":"INFO","msg":"stream: closed","id":"lwqiqerf"}

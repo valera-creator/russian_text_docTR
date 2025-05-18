@@ -1,0 +1,29 @@
+2025-05-18 01:44:15,362 INFO    MainThread:8948 [wandb_setup.py:_flush():70] Current SDK version is 0.19.11
+2025-05-18 01:44:15,362 INFO    MainThread:8948 [wandb_setup.py:_flush():70] Configure stats pid to 8948
+2025-05-18 01:44:15,362 INFO    MainThread:8948 [wandb_setup.py:_flush():70] Loading settings from C:\Users\valera\.config\wandb\settings
+2025-05-18 01:44:15,362 INFO    MainThread:8948 [wandb_setup.py:_flush():70] Loading settings from D:\projects\a\doctr\wandb\settings
+2025-05-18 01:44:15,362 INFO    MainThread:8948 [wandb_setup.py:_flush():70] Loading settings from environment variables
+2025-05-18 01:44:15,362 INFO    MainThread:8948 [wandb_init.py:setup_run_log_directory():724] Logging user logs to D:\projects\a\doctr\wandb\run-20250518_014415-lwqiqerf\logs\debug.log
+2025-05-18 01:44:15,363 INFO    MainThread:8948 [wandb_init.py:setup_run_log_directory():725] Logging internal logs to D:\projects\a\doctr\wandb\run-20250518_014415-lwqiqerf\logs\debug-internal.log
+2025-05-18 01:44:15,363 INFO    MainThread:8948 [wandb_init.py:init():852] calling init triggers
+2025-05-18 01:44:15,363 INFO    MainThread:8948 [wandb_init.py:init():857] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.001, 'epochs': 20, 'weight_decay': 0, 'batch_size': 16, 'architecture': 'crnn_vgg16_bn', 'input_size': 32, 'optimizer': 'adam', 'framework': 'pytorch', 'scheduler': 'cosine', 'vocab': 'russian', 'train_hash': '2d9e76a1422bcf20b71f1ea20a0b7fdab222e1f95132b1e68f8ee1c5f7a494e8', 'val_hash': '2fec8631dd8cc272eafb92996cd394f7e6d1268fec9204e6858a011cd64c5683', 'pretrained': False, '_wandb': {}}
+2025-05-18 01:44:15,363 INFO    MainThread:8948 [wandb_init.py:init():893] starting backend
+2025-05-18 01:44:15,363 INFO    MainThread:8948 [wandb_init.py:init():897] sending inform_init request
+2025-05-18 01:44:15,411 INFO    MainThread:8948 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn, using: spawn
+2025-05-18 01:44:15,411 INFO    MainThread:8948 [wandb_init.py:init():907] backend started and connected
+2025-05-18 01:44:15,413 INFO    MainThread:8948 [wandb_init.py:init():1005] updated telemetry
+2025-05-18 01:44:15,452 INFO    MainThread:8948 [wandb_init.py:init():1029] communicating run to backend with 90.0 second timeout
+2025-05-18 01:44:16,371 INFO    MainThread:8948 [wandb_init.py:init():1104] starting run threads in backend
+2025-05-18 01:44:16,438 INFO    MainThread:8948 [wandb_run.py:_console_start():2573] atexit reg
+2025-05-18 01:44:16,438 INFO    MainThread:8948 [wandb_run.py:_redirect():2421] redirect: wrap_raw
+2025-05-18 01:44:16,439 INFO    MainThread:8948 [wandb_run.py:_redirect():2490] Wrapping output streams.
+2025-05-18 01:44:16,439 INFO    MainThread:8948 [wandb_run.py:_redirect():2513] Redirects installed.
+2025-05-18 01:44:16,468 INFO    MainThread:8948 [wandb_init.py:init():1150] run started, returning control to user process
+2025-05-18 05:35:56,001 INFO    MainThread:8948 [wandb_run.py:_finish():2321] finishing run valerylarionov06-/text-recognition/lwqiqerf
+2025-05-18 05:35:56,013 INFO    MainThread:8948 [wandb_run.py:_atexit_cleanup():2538] got exitcode: 0
+2025-05-18 05:35:56,017 INFO    MainThread:8948 [wandb_run.py:_restore():2520] restore
+2025-05-18 05:35:56,020 INFO    MainThread:8948 [wandb_run.py:_restore():2526] restore done
+2025-05-18 05:35:57,778 INFO    MainThread:8948 [wandb_run.py:_footer_history_summary_info():4188] rendering history
+2025-05-18 05:35:57,781 INFO    MainThread:8948 [wandb_run.py:_footer_history_summary_info():4220] rendering summary
+2025-05-18 05:35:57,785 INFO    MainThread:8948 [wandb_run.py:_footer_sync_info():4149] logging synced files

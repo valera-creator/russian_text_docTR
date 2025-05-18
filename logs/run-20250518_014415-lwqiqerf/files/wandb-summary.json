@@ -1,0 +1,1 @@
+{"val_loss_step":0.2547622621059418,"exact_match":0.6372491145218417,"_step":82579,"train_loss":0.19119145493717118,"val_loss":0.35345269225916026,"step_lr":4e-09,"partial_match":0.6451446280991735,"_runtime":13900.5832468,"train_loss_step":0.1080467626452446,"learning_rate":4e-09,"_wandb":{"runtime":13900},"_timestamp":1.7475357559952447e+09}
